@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:orientation="vertical"
+                  android:background="#ff23"
+
+        >
+
+        <FrameLayout
+            android:id="@+id/fl_ijk"
+            android:layout_width="match_parent"
+            android:background="#0022ff"
+            android:layout_height="wrap_content">
+
+            <com.example.myijkplayerup.media.IjkVideoView
+                android:id="@+id/ijkVideoView"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/info_net"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:textColor="#ff1122"
+                android:visibility="gone"
+                android:layout_height="wrap_content"/>
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                tools:context=".toolbar_widget" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Button"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/bt_restart"
+            android:onClick=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="restart"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+</layout>

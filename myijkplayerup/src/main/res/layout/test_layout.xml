@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/pause"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        style="@android:style/MediaButton.Pause"/>
+    <SeekBar
+        android:id="@+id/mediacontroller_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/pause"
+        android:layout_toRightOf="@id/pause"
+        android:layout_marginTop="17dp"
+        android:padding="4dp"
+        android:layout_toLeftOf="@+id/time_current"
+        />
+    <TextView
+        android:id="@+id/time"
+        android:text="2"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@+id/ic_fullscreen"
+        android:layout_marginTop="20dp"
+        android:textColor="#bebebe"
+        android:layout_alignTop="@id/pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/bymbol"
+        android:layout_toLeftOf="@+id/time"
+        android:layout_alignTop="@+id/time"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:textColor="#bebebe"
+        android:layout_width="wrap_content"
+        android:text="/"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/time_current"
+        android:layout_toLeftOf="@+id/bymbol"
+        android:text="1"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:textColor="#bebebe"
+        android:layout_alignTop="@+id/bymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageButton
+        android:id="@+id/ic_fullscreen"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        app:srcCompat="@drawable/ic_fullscreen_black_24dp"
+        style="@android:style/MediaButton"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/pause"
+        android:layout_alignRight="@+id/pause"
+        android:layout_below="@+id/pause"/>
+
+</RelativeLayout>
